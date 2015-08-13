@@ -7,7 +7,7 @@ define(function (require, exports, module) {
   const DATA_KEY = 'extplug-inline-user-info-added';
 
   const UserInfo = Plugin.extend({
-    name: 'Moderation: User Info',
+    name: 'Inline User Info',
     description: 'Displays user IDs and levels inline in chat and user rollovers.',
 
     style: {

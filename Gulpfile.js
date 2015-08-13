@@ -6,7 +6,7 @@ var mkdirp = require('mkdirp')
 var del    = require('del')
 var runseq = require('run-sequence')
 
-var pluginPath = 'extplug/moderate-user-info'
+var pluginPath = 'extplug/inline-user-info'
 
 gulp.task('clean-lib', function (cb) {
   del('lib', cb)
@@ -46,7 +46,7 @@ gulp.task('rjs', function (done) {
     out: function (text) {
       mkdirp('build', function (e) {
         if (e) done(e)
-        else   fs.writeFile('build/moderate-user-info.js', text, done)
+        else   fs.writeFile('build/inline-user-info.js', text, done)
       })
     }
   })

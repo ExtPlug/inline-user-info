@@ -1,7 +1,9 @@
-Moderation: User Info
-=====================
+Inline User Info
+================
 
-Displays user IDs and levels inline in chat and user rollovers.
+Displays user IDs and levels inline in chat.
+
+![Screenshot](https://i.imgur.com/MwLjOrT.png)
 
 ## Installation
 
@@ -11,7 +13,7 @@ You can install this plugin by going to your ExtPlug settings menu, pressing
 "Install Plugin", and entering this Plugin URL:
 
 ```
-[YOUR HOST URL HERE];extplug/moderation-user-info/main
+https://extplug.github.io/inline-user-info/build/inline-user-info.js;extplug/inline-user-info/main
 ```
 
 ## Building
