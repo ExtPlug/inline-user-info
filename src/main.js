@@ -4,6 +4,8 @@ define(function (require, exports, module) {
   const Events = require('plug/core/Events');
   const $ = require('jquery');
 
+  const DATA_KEY = 'extplug-inline-user-info-added';
+
   const UserInfo = Plugin.extend({
     name: 'Moderation: User Info',
     description: 'Displays user IDs and levels inline in chat and user rollovers.',
@@ -28,7 +30,7 @@ define(function (require, exports, module) {
     },
 
     onMessage(message, el) {
-      if (!message.uid) return;
+      if (!message.uid || el.data(DATA_KEY)) return;
       let user = API.getUser(message.uid);
       let un = el.find('.un');
 
@@ -50,6 +52,8 @@ define(function (require, exports, module) {
             .insertAfter(uid);
         }
       }
+
+      el.data(DATA_KEY, true);
     }
   });
 
