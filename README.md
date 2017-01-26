@@ -1,6 +1,8 @@
 Inline User Info
 ================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/extplug/inline-user-info.svg)](https://greenkeeper.io/)
+
 Displays user IDs and levels inline in chat.
 
 ![Screenshot](https://i.imgur.com/MwLjOrT.png)
