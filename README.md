@@ -3,7 +3,7 @@ Inline User Info
 
 Displays user IDs and levels inline in chat.
 
-![Screenshot](https://i.imgur.com/MwLjOrT.png)
+![Screenshot](./screenshot.png)
 
 ## Installation
 
