@@ -2,19 +2,23 @@
   "name": "extplug-inline-user-info",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Displays user IDs and levels inline in chat and user rollovers.",
+  "description": "ExtPlug plugin that displays user IDs and levels inline in chat and user rollovers.",
+  "author": "ReAnna <renee@kooi.me>",
+  "main": "build/inline-user-info.js",
+  "repository": "extplug/inline-user-info",
   "keywords": [
-    "extplug-plugin"
+    "extplug-plugin",
+    "plug.dj"
+  ],
+  "files": [
+    "build",
+    "src"
   ],
   "devDependencies": {
-    "del": "^1.2.0",
-    "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0",
-    "mkdirp": "^0.5.1",
-    "requirejs": "^2.1.18",
-    "run-sequence": "^1.1.1"
+    "extplug-cli": "^1.0.0"
   },
   "scripts": {
-    "build": "gulp build"
+    "prepublish": "npm run build -- --minify",
+    "build": "extplug bundle src/main.js build/inline-user-info.js"
   }
 }
