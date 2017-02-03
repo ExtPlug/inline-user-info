@@ -13,7 +13,7 @@ You can install this plugin by going to your ExtPlug settings menu, pressing
 "Install Plugin", and entering this Plugin URL:
 
 ```
-https://extplug.github.io/inline-user-info/build/inline-user-info.js;extplug/inline-user-info/main
+https://unpkg.com/extplug-inline-user-info
 ```
 
 ## Building
