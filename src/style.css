@@ -1,0 +1,13 @@
+.extplug-inline-id, .extplug-inline-level {
+  color: #555d70;
+}
+
+#chat-messages {
+  & .extplug-inline-id {
+    padding-left: 5px;
+  }
+  & .extplug-inline-level::before {
+    content: "|";
+    padding: 0 3px;
+  }
+}
