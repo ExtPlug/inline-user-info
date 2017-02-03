@@ -1,6 +1,6 @@
 {
   "name": "extplug-inline-user-info",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "ExtPlug plugin that displays user IDs and levels inline in chat and user rollovers.",
   "author": "ReAnna <renee@kooi.me>",
